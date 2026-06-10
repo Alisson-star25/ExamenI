@@ -1,0 +1,10 @@
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\bin\Debug\AutoRent.exe.config
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\bin\Debug\AutoRent.exe
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\bin\Debug\AutoRent.pdb
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.csproj.AssemblyReference.cache
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.FrmSolicitud.resources
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.Properties.Resources.resources
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.csproj.GenerateResource.cache
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.csproj.CoreCompileInputs.cache
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.exe
+C:\Users\chris\OneDrive\Escritorio\Entornos\ExamenI\AutoRent\AutoRent\obj\Debug\AutoRent.pdb
