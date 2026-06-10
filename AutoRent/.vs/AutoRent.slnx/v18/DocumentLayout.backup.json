@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\OneDrive\\Escritorio\\Entornos\\ExamenI\\AutoRent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75746418-E2AC-47C2-B974-B9B7CC55C7C0}|AutoRent\\AutoRent.csproj|c:\\users\\chris\\onedrive\\escritorio\\entornos\\exameni\\autorent\\autorent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{75746418-E2AC-47C2-B974-B9B7CC55C7C0}|AutoRent\\AutoRent.csproj|c:\\users\\chris\\onedrive\\escritorio\\entornos\\exameni\\autorent\\autorent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75746418-E2AC-47C2-B974-B9B7CC55C7C0}|AutoRent\\AutoRent.csproj|solutionrelative:autorent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75746418-E2AC-47C2-B974-B9B7CC55C7C0}|AutoRent\\AutoRent.csproj|C:\\Users\\chris\\OneDrive\\Escritorio\\Entornos\\ExamenI\\AutoRent\\autorent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75746418-E2AC-47C2-B974-B9B7CC55C7C0}|AutoRent\\AutoRent.csproj|solutionrelative:autorent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Escritorio\\Entornos\\ExamenI\\AutoRent\\AutoRent\\Form1.cs",
+              "RelativeDocumentMoniker": "AutoRent\\Form1.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Escritorio\\Entornos\\ExamenI\\AutoRent\\AutoRent\\Form1.cs",
+              "RelativeToolTip": "AutoRent\\Form1.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAApwDAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T15:30:59.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Escritorio\\Entornos\\ExamenI\\AutoRent\\AutoRent\\Form1.cs",
               "RelativeDocumentMoniker": "AutoRent\\Form1.cs",

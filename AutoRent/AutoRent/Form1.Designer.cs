@@ -37,11 +37,10 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.pcVehiculo = new System.Windows.Forms.PictureBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnsig = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pcVehiculo)).BeginInit();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAlquiler
@@ -58,7 +57,7 @@
             // 
             this.lblCliente.AutoSize = true;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(17, 92);
+            this.lblCliente.Location = new System.Drawing.Point(23, 129);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(235, 29);
             this.lblCliente.TabIndex = 1;
@@ -66,16 +65,17 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(259, 98);
+            this.txtNombre.Location = new System.Drawing.Point(265, 135);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 22);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
             this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNI.Location = new System.Drawing.Point(17, 146);
+            this.lblDNI.Location = new System.Drawing.Point(23, 183);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(60, 29);
             this.lblDNI.TabIndex = 3;
@@ -83,16 +83,17 @@
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(259, 153);
+            this.txtDNI.Location = new System.Drawing.Point(265, 190);
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(269, 22);
             this.txtDNI.TabIndex = 4;
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(17, 203);
+            this.lblTelefono.Location = new System.Drawing.Point(23, 240);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(116, 29);
             this.lblTelefono.TabIndex = 5;
@@ -100,10 +101,11 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(259, 210);
+            this.txtTelefono.Location = new System.Drawing.Point(265, 247);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(269, 22);
             this.txtTelefono.TabIndex = 6;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // cmbTipo
             // 
@@ -112,7 +114,7 @@
             "Turismo",
             "SUV",
             "Pickup"});
-            this.cmbTipo.Location = new System.Drawing.Point(259, 277);
+            this.cmbTipo.Location = new System.Drawing.Point(265, 314);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(269, 24);
             this.cmbTipo.TabIndex = 7;
@@ -121,57 +123,65 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(17, 277);
+            this.lblTipo.Location = new System.Drawing.Point(23, 314);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(202, 29);
             this.lblTipo.TabIndex = 8;
             this.lblTipo.Text = "Tipo de Vehiculo:";
             // 
-            // pcVehiculo
-            // 
-            this.pcVehiculo.Location = new System.Drawing.Point(259, 319);
-            this.pcVehiculo.Name = "pcVehiculo";
-            this.pcVehiculo.Size = new System.Drawing.Size(269, 109);
-            this.pcVehiculo.TabIndex = 9;
-            this.pcVehiculo.TabStop = false;
-            // 
             // btnLimpiar
             // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnLimpiar.Location = new System.Drawing.Point(598, 92);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(173, 83);
             this.btnLimpiar.TabIndex = 10;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnsig
             // 
+            this.btnsig.BackColor = System.Drawing.Color.SkyBlue;
             this.btnsig.Location = new System.Drawing.Point(598, 203);
             this.btnsig.Name = "btnsig";
             this.btnsig.Size = new System.Drawing.Size(173, 83);
             this.btnsig.TabIndex = 11;
-            this.btnsig.Text = "Siguiente";
-            this.btnsig.UseVisualStyleBackColor = true;
+            this.btnsig.Text = "Subir";
+            this.btnsig.UseVisualStyleBackColor = false;
+            this.btnsig.Click += new System.EventHandler(this.btnsig_Click);
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnCerrar.Location = new System.Drawing.Point(598, 319);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(173, 83);
             this.btnCerrar.TabIndex = 12;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(23, 440);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(19, 25);
+            this.lblResultado.TabIndex = 13;
+            this.lblResultado.Text = "-";
             // 
             // FrmSolicitud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(818, 488);
+            this.ClientSize = new System.Drawing.Size(818, 611);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnsig);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.pcVehiculo);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.txtTelefono);
@@ -183,7 +193,6 @@
             this.Controls.Add(this.lblAlquiler);
             this.Name = "FrmSolicitud";
             this.Text = "AutoRent HN";
-            ((System.ComponentModel.ISupportInitialize)(this.pcVehiculo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,10 +209,10 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.PictureBox pcVehiculo;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnsig;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
